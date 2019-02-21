@@ -1,0 +1,9 @@
+<% @products.each do |product| %>
+<div>
+	<h1><%= product.title %></h1>
+	<a><%= product.price %></a>
+</div>
+<%= link_to('Read more', product) %>
+<% end %>
+
+<%= link_to('create', new_product_url) %>
